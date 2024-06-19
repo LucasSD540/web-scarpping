@@ -61,7 +61,7 @@ def main():
     response = requests.get(popular_movies_url, headers=headers)
     soup = BeautifulSoup(response.content, 'html.parser')
 
-    # Main function to extract the 100 movies from IMDB Most Popular Movies
+    # MAIN function to extract the 100 movies from IMDB Most Popular Movies
     extract_movies(soup)
 
     end_time = time.time()
